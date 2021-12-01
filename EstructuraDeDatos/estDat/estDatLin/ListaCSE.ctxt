@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=ListaCSE
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ ListaCSE\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=boolean\ vacia()
+comment1.text=\r\n\ vacia\ metodo\ que\ retorna\ true\ si\ la\ lista\ esta\ vacia\ caso\ contrario\ false\r\n
+comment2.params=dato
+comment2.target=void\ insertar(java.lang.Object)
+comment2.text=metodo\ insertar\ permite\ insertar\ el\ dato\ al\ final\ de\ la\ lista
+comment3.params=pos
+comment3.target=java.lang.Object\ eliminar(int)
+comment3.text=\r\n\ metodo\ eliminar\ permite\ eliminar\ el\ elemento\ de\ la\ posicion\ pos\r\n\ si\ existeria\ y\ ademas\ lo\ retorna,\ si\ la\ posicion\ pos\ no\ existiera\r\n\ entonces\ no\ cambia\ la\ estructura\ y\ devuelve\ null\r\n
+comment4.params=pos
+comment4.target=java.lang.Object\ acceder(int)
+comment4.text=\r\n\ metodo\ acceder\ permite\ acceder\ al\ elemento\ de\ la\ posicion\ si\ existiera,\r\n\ caso\ contrario\ me\ devuel\ null.\r\n
+numComments=5
