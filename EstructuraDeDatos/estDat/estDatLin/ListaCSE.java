@@ -8,6 +8,8 @@ package estDat.estDatLin;
  * @version (a version number or a date)
  */
 public class ListaCSE<T> implements Lista<T>{
+    private NodoSE<T> ini;
+    
     /**
      * vacia metodo que retorna true si la lista esta vacia caso contrario false
      */

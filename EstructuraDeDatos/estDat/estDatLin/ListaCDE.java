@@ -8,16 +8,37 @@ package estDat.estDatLin;
  * @version (a version number or a date)
  */
 public class ListaCDE<T> implements Lista<T>{
+    private NodoDE<T> ini;
+    
+    /*
+     * contruye una listaCDE vacia
+     */
+    public ListaCDE(){
+        ini = null;
+    }
+    
     /**
      * vacia metodo que retorna true si la lista esta vacia caso contrario false
      */
     public boolean vacia(){
-        return false;
+        return ini == null;
     };
     
     /* metodo insertar permite insertar el dato al final de la lista*/
     public void insertar(T dato){
-        
+        NodoDE<T> p,ult;
+        p = new NodoDE<T>(dato);
+        if(vacia()){
+            ini=p;
+            ini.setSuc(ini);
+            ini.setAnt(ini);
+        }else{
+            ult=ini.getAnt();
+            ult.setSuc(p);
+            p.setAnt(ult);
+            p.setSuc(ini);
+            ini.setAnt(p);
+        }
     };
     
     /**
